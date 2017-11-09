@@ -1,0 +1,19 @@
+bash_profileの作成
+sudo vim ~/.bash_profile
+
+filepathを通す
+export PATH="$HOME/.pyenv/shims:$PATH"
+
+source ~/.bash_profile
+
+pythonインストール
+pyenv install 3.6.0
+
+python確認
+pyenv global 3.6.0
+
+version確認
+python -V
+
+which python
+pathの確認
