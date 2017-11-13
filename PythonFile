@@ -17,3 +17,15 @@ python -V
 
 which python
 pathの確認
+
+MySQLのインポート
+pip install mysqlclient
+
+Pandasのインポート
+pip install pandas
+
+Scikit-learnのインポート
+pip install -U scikit-learn
+
+ライブラリーとVersionの確認
+pip freeze
