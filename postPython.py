@@ -14,9 +14,11 @@ def main():
     r = requests.get('URLSet')
  
     elapsed_time =  time.time() - start
-    text = datetime.now().strftime("%Y/%m/%d %H:%M:%S")+" "+"StatusCode"+str(r.status_code)+" "+"経過時間"+str(elapsed_time)
+    text = datetime.now().strftime("%Y/%m/%d %H:%M:%S")+" "+"StatusCode"+str(r.status_code)+" "+"経過時間"+str(elapsed_time)+"\n"
 
-    print(text)
+    f = open('file.text', 'a')
+    f.writelines(text)
+    f.close()
 
 
 if __name__=='__main__':
