@@ -1,7 +1,10 @@
 from Crypto.PublicKey import RSA
-import Crypto.PublicKey.RSA as RSA
+from Crypto.Cipher import PKCS1_OAEP
+from Crypto.Hash import SHA512
+import binascii
 
 def main():
+
     rsa_fact = RSA.RSAImplementation()
     rsa_key = rsa_fact.generate(bits=2048)
     
@@ -14,10 +17,26 @@ def main():
     f.write(private)
     f.close()
 
+    print(private)
     f = open('public-key.pem', 'wb')
     f.write(public)
     f.close()
 
+    print(public)
+    message = u'暗号化'.encode('utf-8')
+    P = binascii.b2a_hex(message)
+    key = rsa_key
+    cipher = PKCS1_OAEP.new(key, hashAlgo=SHA512)
+    ciphertext = cipher.encrypt(P)
+    
+    f = open('encrypted_msg.bin', 'wb')
+    f.write(ciphertext)
+    f.close()
+    print(ciphertext)
+    M = cipher.decrypt(ciphertext)
+    message = binascii.a2b_hex(M).decode('utf-8')
+    print(message)
+    
 if __name__=='__main__':
     main()
 
