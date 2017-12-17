@@ -1,13 +1,14 @@
-# PythonFile
+#  PythonFile 
 
-### postPython.py is Python3
-### Command operation
-#### pip install requests
-#### pip install datetime
-#### clontab -e
+### <p class="info"> postPython.py is Python3 </p>
+### <p class="info"> Command operation </p>
+#### <p class="info"> pip install requests </p>
+#### <p class="info"> pip install datetime </p>
+#### <p class="info"> clontab -e</p>
 
-#### clontabSettings
-*/1 * * * * /Users/UserName/.pyenv/shims/python $HOME/directory/postPython.py >> postPython.txt
+#### <p class="info"> clontabSettings</p>
+#### <p class="info"> <p class="info"> */1 * * * * /Users/UserName/.pyenv/shims/python $HOME/directory/postPython.py >>   postPython.txt </p>
+
 
 #### StatusCode is displayed every 1 minute.
 <img src="https://github.com/daisukenagata/PythonFile/blob/master/crontabImage.png?raw=true" width="520px" height="510px">
