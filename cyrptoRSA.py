@@ -29,9 +29,13 @@ def main():
     cipher = PKCS1_OAEP.new(key, hashAlgo=SHA512)
     ciphertext = cipher.encrypt(P)
     
-    f = open('encrypted_msg.bin', 'wb')
-    f.write(ciphertext)
+    f = open('msg.bin', 'w')
+    f.write('文字列の代入')
     f.close()
+    
+    'ターミナルコマンド->openssl rsautl -encrypt -pubin -inkey 出力.pem -in msg.bin -out 作成binファイル'
+    
+    
     print(ciphertext)
     M = cipher.decrypt(ciphertext)
     message = binascii.a2b_hex(M).decode('utf-8')
