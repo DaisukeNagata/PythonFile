@@ -5,8 +5,7 @@ import binascii
 
 def main():
 
-    rsa_fact = RSA.RSAImplementation()
-    rsa_key = rsa_fact.generate(bits=2048)
+    rsa_key = RSA.generate(bits=2048)
     
     key = RSA.construct(map(int, (rsa_key.n,rsa_key.e,rsa_key.d)))
 
