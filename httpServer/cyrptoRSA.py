@@ -1,7 +1,4 @@
 from Crypto.PublicKey import RSA
-from Crypto.Cipher import PKCS1_OAEP
-from Crypto.Hash import SHA512
-import binascii
 
 def start_Key():
 
@@ -10,5 +7,6 @@ def start_Key():
 
     private = key.exportKey()
     public = key.publickey().exportKey()
+    print(public)
+    return public
 
-    print(private)

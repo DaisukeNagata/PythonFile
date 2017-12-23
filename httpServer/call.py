@@ -21,12 +21,12 @@ class call(BaseHTTPRequestHandler):
         BaseHTTPRequestHandler.__init__(self, *args)
    
     def do_POST(self):
-        cyrptoRSA.main()
+    
         parsed_path = urlparse(self.path)
         query = parsed_path.query
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(query.encode())
+        self.wfile.write(cyrptoRSA.start_Key())
        
         return
         
