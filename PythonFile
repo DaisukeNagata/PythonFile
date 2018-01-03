@@ -29,3 +29,6 @@ pip install -U scikit-learn
 
 ライブラリーとVersionの確認
 pip freeze
+
+パイソンのローカルサーバー
+python3 -m http.server
