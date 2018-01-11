@@ -2,8 +2,10 @@
 
 ### <p class="info"> postPython.py is Python3 </p>
 ### <p class="info"> Command operation </p>
+#### <p class="info"> ターミナルpythonライブラリーの設定</p>
 #### <p class="info"> pip install requests </p>
 #### <p class="info"> pip install datetime </p>
+#### <p class="info"> ターミナルのvim設定</p>
 #### <p class="info"> clontab -e</p>
 
 #### <p class="info"> clontabSettings</p>
