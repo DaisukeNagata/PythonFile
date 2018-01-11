@@ -1,6 +1,6 @@
 #  PythonFile 
 
-### <p class="info"> postPython.py is Python3 </p>
+### <p class="info"> postPython.py is Python3  Speed Test</p>
 ### <p class="info"> Command operation </p>
 #### <p class="info"> ターミナルpythonライブラリーの設定</p>
 #### <p class="info"> pip install requests </p>
