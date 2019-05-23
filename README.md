@@ -1,3 +1,29 @@
+# Mac Mojave Version
+
+$ which python
+
+$ vim .bash_profile
+
+$ export PATH="$HOME/.pyenv/shims:$PATH"
+
+$ source ~/.bash_profile
+
+$ sudo xcode-select --install
+
+$ brew install python
+
+$ pyenv install -l
+
+$ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+
+$ pyenv install 3.7.X 
+
+$ pyenv versions
+
+$ python --version
+
+
+
 #  postPython.py
 
 ### <p class="info"> It is a communication test. Speed test once a minute.</p>
