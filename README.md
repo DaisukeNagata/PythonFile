@@ -40,7 +40,7 @@ Start web server
 ``` python -m http.server 8000 ```
 
 CD Specified hierarchy
-``` pyton postPython.py ```
+``` python postPython.py ```
 
 #### StatusCode is displayed every 1 minute.
 <img src="https://github.com/daisukenagata/PythonFile/blob/master/crontabImage.png?raw=true" width="520px" height="510px">
