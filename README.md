@@ -40,10 +40,19 @@ Start web server
 ``` python -m http.server 8000 ```
 
 CD Specified hierarchy
+
+Mac Command
 ``` python postPython.py ```
 
 #### StatusCode is displayed every 1 minute.
 <img src="https://github.com/daisukenagata/PythonFile/blob/master/crontabImage.png?raw=true" width="520px" height="510px">
 
 ## Implementation of encryption in python 3.6.3
+pip install pycrypto
+
+CD Specified hierarchy
+
+Mac Command
+``` python cyrptoRSASet.py ```
+
 <img src="https://github.com/daisukenagata/PythonFile/blob/master/スクリーンショット%202017-12-17%206.13.48.png?raw=true" width="520px" height="610px">
