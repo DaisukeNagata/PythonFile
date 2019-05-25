@@ -26,17 +26,21 @@ $ python --version
 
 #  postPython.py
 
-### <p class="info"> It is a communication test. Speed test once a minute.</p>
-### <p class="info"> Command operation </p>
+#### <p class="info"> It is a communication test. Speed test once a minute.</p>
+#### <p class="info"> Command operation </p>
 #### <p class="info"> ターミナルpythonライブラリーの設定</p>
 #### <p class="info"> pip install requests </p>
 #### <p class="info"> pip install datetime </p>
 #### <p class="info"> ターミナルの設定</p>
 #### <p class="info"> clontab -e</p>
+#### <p class="info"> <p class="info"> */1 * * * * /Users/UserName/.pyenv/shims/python $HOME/directory/postPython.py >>   postPython.txt </p>
 
-#### <p class="info"> clontabSettings</p>
-#### <p class="info"> <p class="info"> */1 * * * * /Users/UserName/.pyenv/shims/python $HOME/directory/postPython.py >>   postPython.txt </p>
 
+Start web server
+``` python -m http.server 8000 ```
+
+CD Specified hierarchy
+``` pyton postPython.py ```
 
 #### StatusCode is displayed every 1 minute.
 <img src="https://github.com/daisukenagata/PythonFile/blob/master/crontabImage.png?raw=true" width="520px" height="510px">
