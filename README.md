@@ -1,4 +1,6 @@
 # Mac Mojave Version
+this is brew site
+https://brew.sh/index_ja
 
 $ which python
 
