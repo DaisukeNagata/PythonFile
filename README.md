@@ -49,7 +49,7 @@ Mac Command
 #### StatusCode is displayed every 1 minute.
 <img src="https://github.com/daisukenagata/PythonFile/blob/master/crontabImage.png?raw=true" width="520px" height="510px">
 
-## Implementation of encryption in python 3.6.3
+## Implementation of encryption in python 3.7.x
 pip install pycrypto
 
 CD Specified hierarchy
@@ -57,4 +57,4 @@ CD Specified hierarchy
 Mac Command
 ``` python cyrptoRSASet.py ```
 
-<img src="https://github.com/daisukenagata/PythonFile/blob/master/スクリーンショット%202017-12-17%206.13.48.png?raw=true" width="520px" height="610px">
+<img src="https://user-images.githubusercontent.com/16457165/77247040-962eae00-6c70-11ea-9fb3-c46d08b594c5.png?raw=true" width="500px" height="500px">
