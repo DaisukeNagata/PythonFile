@@ -28,18 +28,24 @@ def main():
     cipher = PKCS1_OAEP.new(key, hashAlgo=SHA512)
     ciphertext = cipher.encrypt(P)
     
-    f = open('msg.bin', 'w')
-    f.write('文字列の代入')
-    f.close()
-    
-    'ターミナルコマンド->openssl rsautl -encrypt -pubin -inkey 出力.pem -in msg.bin -out 作成binファイル'
-    
-    
+    private_cipher = PKCS1_OAEP.new(key, hashAlgo=SHA512)
+    message2 = private_cipher.decrypt(ciphertext).decode('utf-8')
+
+    print('暗号化')
     print(ciphertext)
-    M = cipher.decrypt(ciphertext)
-    message = binascii.a2b_hex(M).decode('utf-8')
-    print(message)
     
+    print('複合化')
+    print(message2)
+    
+    # https://qiita.com/kunichiko/items/12cbccaadcbf41c72735
+    # openssl rsa -in private-key.pem -text -noout 秘密鍵の中身を見る方法
+    # openssl rsa -pubin -in public-key.pem -text -noout 公開鍵の中身を見る方法
+    # openssl x509 -in public-key.der.crt -inform der -out public-key.crt 証明書(署名付きの公開鍵)を作成する
+    # openssl req -in my-request.csr -text -noout CSRの中身を表示する
+    # openssl x509 -req -in my-request.csr -CA ca-crt.pem -CAkey ca-private-key.pem -CAcreateserial -days 3650 -out public-key.crt CSRから証明書を発行する
+    # ca-crt.pemをCAに依頼
+    # openssl x509 -req -in my-request.csr -signkey private-key.pem -out public-key.crt -days 3650
+    # openssl x509 -req -in my-request.csr -signkey private-key.pem -out public-key.crt -days 3650 自己署名証明書を発行する場合
 if __name__=='__main__':
     main()
 
